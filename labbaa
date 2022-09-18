@@ -1,40 +1,19 @@
 print("1 = перевести в шифр")
-print("2 = перевести з шифру")
 
 ukr = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя"
 choice = int(input( "ведіть дію: " ))
-eng = "abcdefghiklmnopqrstvxyz"
-m = "0123456789"
-#ukrain
-if choice == 1 :
-    word = input("ведіть слово: ")
-    key = int(input("ведіть кількість додавань: "))
-    word_low = word.lower()
-    a = ""
-    for letter in word_low :
-         position = ukr.find (letter)
-         new_position = position + key
-         if letter in ukr:
-              a = a + ukr[new_position]
-         else:
-              a = a + letter
-      
 
-
-elif choice == 2:
-
-    if choice == 2:
-        word = input("ведіть слово: ")
-        key = int(input("ведіть кількість додавань: "))
-        word_low = word.lower()
-        a = ""
-        for letter in word_low:
-            position = ukr.find(letter)
-            new_position = position - key
-            if letter in ukr:
-                a = a + ukr[new_position]
-            else:
-                a = a + letter
-
-
-print (a)
+while True:
+        if choice == 1 :
+            word = input("ведіть слово: ")
+            key = int(input("ведіть кількість додавань: "))
+            word_low = word.lower()
+            chif = ""
+            for letter in word_low :
+                     position = ukr.find (letter)
+                     new_position = position + key
+                     if letter in ukr:
+                        chif = chif + ukr[new_position]
+                     else:
+                        chif = chif + letter
+            print(chif)
