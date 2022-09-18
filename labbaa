@@ -18,7 +18,7 @@ if choice == 1 :
               a = a + ukr[new_position]
          else:
               a = a + letter
-            el
+      
 
 
 elif choice == 2:
