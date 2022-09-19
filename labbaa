@@ -1,12 +1,8 @@
-print("1 = перевести в шифр")
-
-ukr = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя"
-choice = int(input( "ведіть дію: " ))
+ukr = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮabcdefghiklmnopqrstvxyzABCDEFGHIKLMNOPQRSTVXYZ"
 
 while True:
-        if choice == 1 :
             word = input("ведіть слово: ")
-            key = int(input("ведіть кількість додавань: "))
+            key = 1
             word_low = word.lower()
             chif = ""
             for letter in word_low :
@@ -17,3 +13,4 @@ while True:
                      else:
                         chif = chif + letter
             print(chif)
+
